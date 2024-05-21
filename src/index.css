@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  background-color: black;
+}
+#moreinfo {
+  color: rgba(255, 255, 255, 0.489);
+}
