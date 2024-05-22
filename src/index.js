@@ -11,7 +11,7 @@ const cards = [
     title: 'Smart Curator',
     description: 'Instant access to breaking news headlines and historical news articles.',
     image: './img/showcase/news.jpg',
-    link: 'https://rapidapi.com/symbola-symbola-default/api/smart-curator'
+    link: 'https://rapidapi.com/symbola-prod/api/smart-curator/'
   }
 ];
 
