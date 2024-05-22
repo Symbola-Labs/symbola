@@ -18,6 +18,7 @@ export default function ActionAreaCard(props) {
         <CardMedia
           component="img"
           height="140"
+          borderRadius="0px"
           image={props.image}
           alt={props.title}
         />

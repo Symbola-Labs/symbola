@@ -53,7 +53,7 @@ module.exports = function (_env, argv) {
           use: 'raw-loader',
         },
         {
-          test: /\.(sass|less|css)$/,
+          test: /\.css$/,
           use: [
             'style-loader', // Injects styles into the DOM.
             'css-loader', // Interprets @import and url() like import/require() and resolves them.
@@ -63,14 +63,21 @@ module.exports = function (_env, argv) {
                 postcssOptions: {
                   plugins: () => [
                     require("autoprefixer")(),
-                    require("postcss-preset-env")(),
-                    require("tailwindcss")()
+                    require("postcss-preset-env")()
                   ],
                 },
               },
             },
           ],
-        }    
+        },
+        {
+          test: /\.less$/,
+          use: [
+              'style-loader', // Injects CSS into the DOM
+              'css-loader', // Translates CSS into CommonJS
+              'less-loader' // Compiles Less to CSS
+          ]
+      }    
     ]
     },
     

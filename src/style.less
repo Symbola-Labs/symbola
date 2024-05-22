@@ -1,0 +1,33 @@
+body {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    background-color: rgb(120, 120, 120);
+}
+
+#moreinfo{
+    color: rgba(255, 255, 255, 0.489);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 16px; /* Adjust the gap between cards if needed */
+    padding: 16px; /* Adjust the padding if needed */
+    background-color: transparent;
+    & > div{
+        background-color: transparent;
+    }
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    color: #ffffff5c;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Arial', sans-serif;
+}
