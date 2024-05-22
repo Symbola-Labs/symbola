@@ -4,11 +4,11 @@
   "description": "Static landing page for Symbola R&D Projects",
   "main": "src/index.js",
   "scripts": {
-    "test": "npx webpack --config webpack.config.js",
+    "test": "npx webpack --config webpack.config.js --watch",
     "build": "npx webpack --optimization-minimize --config webpack.config.js",
     "install": "npm i babel-loader @babel/core @babel/preset-env webpack"
   },
-  "author": "Chad Groom | Symbola | All Rights Reserved",
+  "author": "Chad Groom (github.com/a3r0id) | Symbola | All Rights Reserved",
   "license": "UNLICENSED",
   "dependencies": {
     "@babel/core": "^7.24.5",

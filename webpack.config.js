@@ -9,9 +9,7 @@ module.exports = function (_env, argv) {
   return { 
     mode: envName,
     devtool: isDevelopment && "cheap-module-source-map",
-    entry: path.join(__dirname, 'src'),
-    watch: true,
-    
+    entry: path.join(__dirname, 'src'),    
     output: {
       path: path.join(__dirname, 'dist', 'js'),
       publicPath: '/js/',
